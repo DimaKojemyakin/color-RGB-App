@@ -16,6 +16,8 @@
 		813D9ACD2AC701AF00DB2695 /* colorValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813D9ACC2AC701AF00DB2695 /* colorValueTests.swift */; };
 		813D9AD72AC701AF00DB2695 /* colorValueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813D9AD62AC701AF00DB2695 /* colorValueUITests.swift */; };
 		813D9AD92AC701AF00DB2695 /* colorValueUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813D9AD82AC701AF00DB2695 /* colorValueUITestsLaunchTests.swift */; };
+		813D9AEB2AC7149B00DB2695 /* ViewControllerColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813D9AEA2AC7149B00DB2695 /* ViewControllerColor.swift */; };
+		813D9AED2AC738E900DB2695 /* ColorVAlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813D9AEC2AC738E900DB2695 /* ColorVAlue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		813D9AD22AC701AF00DB2695 /* colorValueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = colorValueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		813D9AD62AC701AF00DB2695 /* colorValueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorValueUITests.swift; sourceTree = "<group>"; };
 		813D9AD82AC701AF00DB2695 /* colorValueUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorValueUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		813D9AEA2AC7149B00DB2695 /* ViewControllerColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerColor.swift; sourceTree = "<group>"; };
+		813D9AEC2AC738E900DB2695 /* ColorVAlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorVAlue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,11 @@
 		813D9AB42AC701AB00DB2695 /* colorValue */ = {
 			isa = PBXGroup;
 			children = (
-				813D9AB52AC701AB00DB2695 /* AppDelegate.swift */,
-				813D9AB72AC701AB00DB2695 /* SceneDelegate.swift */,
-				813D9AB92AC701AB00DB2695 /* ViewController.swift */,
-				813D9ABB2AC701AB00DB2695 /* Main.storyboard */,
-				813D9ABE2AC701AF00DB2695 /* Assets.xcassets */,
-				813D9AC02AC701AF00DB2695 /* LaunchScreen.storyboard */,
 				813D9AC32AC701AF00DB2695 /* Info.plist */,
+				813D9AE92AC7023300DB2695 /* Add */,
+				813D9AE52AC701DF00DB2695 /* ViewControllers */,
+				813D9AE62AC701FA00DB2695 /* Storyboard */,
+				813D9AE72AC7021300DB2695 /* Performs */,
 			);
 			path = colorValue;
 			sourceTree = "<group>";
@@ -125,6 +127,42 @@
 				813D9AD82AC701AF00DB2695 /* colorValueUITestsLaunchTests.swift */,
 			);
 			path = colorValueUITests;
+			sourceTree = "<group>";
+		};
+		813D9AE52AC701DF00DB2695 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				813D9AB92AC701AB00DB2695 /* ViewController.swift */,
+				813D9AEC2AC738E900DB2695 /* ColorVAlue.swift */,
+				813D9AEA2AC7149B00DB2695 /* ViewControllerColor.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		813D9AE62AC701FA00DB2695 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				813D9ABB2AC701AB00DB2695 /* Main.storyboard */,
+				813D9AC02AC701AF00DB2695 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		813D9AE72AC7021300DB2695 /* Performs */ = {
+			isa = PBXGroup;
+			children = (
+				813D9ABE2AC701AF00DB2695 /* Assets.xcassets */,
+			);
+			path = Performs;
+			sourceTree = "<group>";
+		};
+		813D9AE92AC7023300DB2695 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				813D9AB52AC701AB00DB2695 /* AppDelegate.swift */,
+				813D9AB72AC701AB00DB2695 /* SceneDelegate.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +298,9 @@
 			files = (
 				813D9ABA2AC701AB00DB2695 /* ViewController.swift in Sources */,
 				813D9AB62AC701AB00DB2695 /* AppDelegate.swift in Sources */,
+				813D9AEB2AC7149B00DB2695 /* ViewControllerColor.swift in Sources */,
 				813D9AB82AC701AB00DB2695 /* SceneDelegate.swift in Sources */,
+				813D9AED2AC738E900DB2695 /* ColorVAlue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -425,6 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -448,8 +490,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,8 +518,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
